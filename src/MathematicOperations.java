@@ -1,7 +1,9 @@
 public class MathematicOperations {
     public static void main(String[] args) {
+                /*
         double x = 2.1;
         double y = 3;
+
 
         // métodos que me atraen de la clase Math en java (en este punto)
 
@@ -26,10 +28,15 @@ public class MathematicOperations {
         //max(x,y) devuelve el menor
         System.out.println(Math.min(x,y));     //2
 
-        int z = 16;
+
+         */
+
+        int z = 15;
 
         //sqrt(x) devuelve la raiz cuadrada   //4
-        System.out.println(Math.sqrt(z));
+        System.out.println((int) Math.sqrt(z));
+
+        /*
 
         //area de un circulo --> fórmula: pi * r2        donde r = radio del circulo                 //28.27...
         double radio = 3;
@@ -38,10 +45,12 @@ public class MathematicOperations {
         //area de una esfera --> fórmula: 4 * PI * r2
         System.out.println( 4 * Math.PI * Math.pow(radio, 2));                                      //113.09...
 
+*/
+
         //volumen de una esfera --> fórmula: (4/3) * PI * r3
-        System.out.println( (4/3) * Math.PI * (Math.pow(radio,3)) );                                //84.82..
-
-
+        double radio = 3;
+        double volumenEsfera = (int) ((4/3) * Math.PI * (Math.pow(radio,3)));
+        System.out.println(volumenEsfera);                                                          //84.00..   //debería dar sólo el entero -> 84
 
     }
 }
