@@ -30,6 +30,33 @@ public class Casting {
 
 
 
+        double c = a/b;
+        System.out.println(c);                                  //2.0
+
+        double c2 = (double) a/b;
+        System.out.println(c2);                                 //2.5
+
+        double c3 = (int) a/b;                                  //2.0         ñe :|
+        System.out.println(c3);
+
+
+
+        char n = '1';
+        int nI = n;
+
+        System.out.println(nI);                                 // 49   muestra 49 (y no 1) porque el char '1' EQUIVALE al INT 49 en la tabla ASCII       ( '1' != 1 )  para el jdk (java)
+                                                                // el casting se ejecuta automáticamente (no es preciso castearlo 'intencionalmente')
+                                                                // "casteo automático"
+
+
+
+        //short nS = n;                                         //error pq el char es más grande que el short (el dato de tipo char no cabe dentro de la variable de tipo short)
+
+        short nS = (short) n;                                   //49   (mismo resultado que int)                           cast explícito
+        System.out.println(nS);                                 // "casteo explícito"
+
+
+
 
     }
 }
