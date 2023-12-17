@@ -49,8 +49,17 @@ public class MathematicOperations {
 
         //volumen de una esfera --> fórmula: (4/3) * PI * r3
         double radio = 3;
-        double volumenEsfera = (int) ((4/3) * Math.PI * (Math.pow(radio,3)));
+        double volumenEsfera = (int) ((4 / 3) * Math.PI * (Math.pow(radio, 3)));
         System.out.println(volumenEsfera);                                                          //84.00..   //debería dar sólo el entero -> 84
 
+
+        // >>>>>>>>>>>>>>>>>>>>>>>>       FUNCTIONS    !!!! yesss!< entrando en materia (modular and reutilizable  code yessss)
+
+        //area de un circulo --> fórmula: pi * r2        donde r = radio del circulo                 //28.27...
+        double r = 3;
+        System.out.println((Math.PI) * Math.pow(r, 2));
+        System.out.println((Math.PI) * Math.pow(5, 2));
+        System.out.println((Math.PI) * Math.pow(10, 2));
+        System.out.println((Math.PI) * Math.pow(1, 2));
     }
 }
